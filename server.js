@@ -46,6 +46,7 @@ const imagekit = new ImageKit({
 
 // Health check endpoint
 app.get('/health', (req, res) => {
+  console.log('Health check endpoint hit');
   res.json({ 
     status: 'OK', 
     message: 'FileSync Backend is running',
